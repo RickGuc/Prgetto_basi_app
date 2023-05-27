@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/Constrain"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/Btn_PageAddPazienti"
+        android:layout_width="173dp"
+        android:layout_height="66dp"
+        android:layout_marginTop="80dp"
+        android:text="Aggiungi pazienti"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView_Cartelle_Title"
+        android:layout_width="169dp"
+        android:layout_height="22dp"
+        android:layout_marginTop="20dp"
+        android:text="CARTELLE SANITARIE"
+        android:textAlignment="center"
+        android:textColor="#EF0A0A"
+        android:textIsSelectable="false"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toTopOf="@+id/Btn_PageAddPazienti"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btn_TerapieAdd"
+        android:layout_width="165dp"
+        android:layout_height="62dp"
+        android:layout_marginTop="30dp"
+        android:text="Aggiungi terapie"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_pat" />
+
+    <Button
+        android:id="@+id/btn_PazientiShow"
+        android:layout_width="155dp"
+        android:layout_height="73dp"
+        android:layout_marginTop="25dp"
+        android:text="Vedi pazienti"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Btn_PageAddPazienti" />
+
+    <Button
+        android:id="@+id/btn_altro"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="15dp"
+        android:text="altro"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/btn_QueryPage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:text="Queries"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_TerapieAdd" />
+
+    <Button
+        android:id="@+id/btn_pat"
+        android:layout_width="155dp"
+        android:layout_height="73dp"
+        android:layout_marginTop="25dp"
+        android:text="Aggiungi patologie"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_PazientiShow" />
+
+    <Button
+        android:id="@+id/btn_programma_esame"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:text="Programma esame"
+        app:layout_constraintEnd_toStartOf="@+id/btn_programma_terapia"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_QueryPage" />
+
+    <Button
+        android:id="@+id/btn_programma_terapia"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Programma terapia"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/btn_programma_esame"
+        app:layout_constraintTop_toTopOf="@+id/btn_programma_esame" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
