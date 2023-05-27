@@ -48,7 +48,7 @@ public class ProgrammaTerapieActivity extends AppCompatActivity {
                 ModelloTerapia modelloTerapia;
 
                 try {
-                    modelloTerapia = new ModelloTerapia(-1, txt_terapia.getText().toString(), txt_paz.getText().toString(), Integer.parseInt(txt_pat.getText().toString()), txt_ops.getText().toString(), txt_care.getText().toString(), LocalDate.parse(txt_data_inizio.getText(), DateTimeFormatter.ofPattern("yyyy-MM-dd")), LocalDate.parse(txt_data_fine.getText(), DateTimeFormatter.ofPattern("HH:mm")), txt_note.getText().toString());
+                    modelloTerapia = new ModelloTerapia(-1, txt_terapia.getText().toString(), txt_paz.getText().toString(), Integer.parseInt(txt_pat.getText().toString()), txt_ops.getText().toString(), txt_care.getText().toString(), LocalDate.parse(txt_data_inizio.getText(), DateTimeFormatter.ofPattern("yyyy-MM-dd")), LocalDate.parse(txt_data_fine.getText(), DateTimeFormatter.ofPattern("yyyy-MM-dd")), txt_note.getText().toString());
                     Toast.makeText( ProgrammaTerapieActivity.this, modelloTerapia.toString(), Toast.LENGTH_SHORT).show();
                 }
                 catch (Exception e) {

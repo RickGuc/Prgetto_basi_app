@@ -258,7 +258,6 @@ public class DatabaseHelper extends SQLiteOpenHelper {
             SQLiteDatabase db = this.getWritableDatabase();
             ContentValues cv = new ContentValues();
 
-            cv.put(COLONNA_ID, modelloEsame.getId());
             cv.put(COLONNA_ESAME, modelloEsame.getNomeesame());
             cv.put(COLONNA_DATA, modelloEsame.getData().toString());
             cv.put(COLONNA_ORA, modelloEsame.getOra().toString());
@@ -280,7 +279,6 @@ public class DatabaseHelper extends SQLiteOpenHelper {
             SQLiteDatabase db = this.getWritableDatabase();
             ContentValues cv = new ContentValues();
 
-            cv.put(COLONNA_ID, modelloTerapia.getId());
             cv.put(COLONNA_TERAPIA, modelloTerapia.getNometerapia());
             cv.put(COLONNA_PAZIENTE, modelloTerapia.getCodicesanitariopaziente());
             cv.put(COLONNA_PATOLOGIA, modelloTerapia.getIdcontrazione());
