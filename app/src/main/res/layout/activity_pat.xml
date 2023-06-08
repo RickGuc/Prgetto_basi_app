@@ -121,9 +121,10 @@
 
         <ListView
             android:id="@+id/lw_show_patologie"
-            android:layout_width="413dp"
+            android:layout_width="381dp"
             android:layout_height="954dp"
-            android:background="#A68AD8"
+            android:layout_marginStart="30dp"
+            android:layout_marginEnd="10dp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/btn_show_pat" />

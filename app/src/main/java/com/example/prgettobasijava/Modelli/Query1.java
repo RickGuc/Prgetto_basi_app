@@ -42,10 +42,9 @@ public class Query1 {
 
     @Override
     public String toString() {
-        return "Query1{" +
+        return
                 "Nome='" + Nome + '\'' +
                 ", Cognome='" + Cognome + '\'' +
-                ", Patologia='" + Patologia + '\'' +
-                '}';
+                ", Patologia='" + Patologia + '\'';
     }
 }

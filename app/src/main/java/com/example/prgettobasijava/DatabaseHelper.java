@@ -398,7 +398,7 @@ public class DatabaseHelper extends SQLiteOpenHelper {
     public List<Query2> getQuery2(String anno) {
         String[] arg = {anno};
         List<Query2> returnList3 = new ArrayList<>();
-        String queryString3 = "SELECT t.TERAPIA AS Terapia, AVG(julianday(t.DATA_FINE) - julianday(t.DATA_INIZIO)) AS DifferenzaMedia FROM TABELLA_TERAPIE t WHERE strftime('%Y', t.DATA_FINE) = ? GROUP BY t.TERAPIA ORDER BY DifferenzaMedia DESC";
+        String queryString3 = "SELECT t.TERAPIA AS Terapia, AVG(julianday(t.DATA_FINE) - julianday(t.DATA_INIZIO)) AS MediaGiorniDiGuarigione FROM TABELLA_TERAPIE t WHERE strftime('%Y', t.DATA_FINE) = ? GROUP BY t.TERAPIA ORDER BY MediaGiorniDiGuarigione DESC";
         SQLiteDatabase db = this.getReadableDatabase();
 
         Cursor cursor3 = db.rawQuery(queryString3, arg);
@@ -406,9 +406,9 @@ public class DatabaseHelper extends SQLiteOpenHelper {
         if (cursor3.moveToFirst()) {
             do {
                 String Nome = cursor3.getString(0);
-                int DifferenzaMedia = cursor3.getInt(1);
+                int MediaGiorniDiGuarigione = cursor3.getInt(1);
 
-                Query2 query2 = new Query2(Nome, DifferenzaMedia);
+                Query2 query2 = new Query2(Nome, MediaGiorniDiGuarigione);
                 returnList3.add(query2);
             } while (cursor3.moveToNext());
 

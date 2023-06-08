@@ -2,11 +2,11 @@ package com.example.prgettobasijava.Modelli;
 
 public class Query2 {
     private String Nome;
-    private int DifferenzaMedia;
+    private int MediaGiorniDiGuarigione;
 
-    public Query2(String nome, int differenzaMedia){
+    public Query2(String nome, int mediaGiorniDiGuarigione){
         Nome = nome;
-        DifferenzaMedia = differenzaMedia;
+        MediaGiorniDiGuarigione = mediaGiorniDiGuarigione;
 
     }
 
@@ -18,19 +18,18 @@ public class Query2 {
         Nome = nome;
     }
 
-    public int getDifferenzaMedia() {
-        return DifferenzaMedia;
+    public int getMediaGiorniDiGuarigione() {
+        return MediaGiorniDiGuarigione;
     }
 
-    public void setDifferenzaMedia(int differenzaMedia) {
-        DifferenzaMedia = differenzaMedia;
+    public void setMediaGiorniDiGuarigione(int mediaGiorniDiGuarigione) {
+        MediaGiorniDiGuarigione = mediaGiorniDiGuarigione;
     }
 
     @Override
     public String toString() {
-        return "Query2{" +
-                "Nome='" + Nome + '\'' +
-                ", DifferenzaMedia=" + DifferenzaMedia +
-                '}';
+        return
+                "Terapia='" + Nome + '\'' +
+                ", MediaGiorniDiGuarigione=" + MediaGiorniDiGuarigione;
     }
 }

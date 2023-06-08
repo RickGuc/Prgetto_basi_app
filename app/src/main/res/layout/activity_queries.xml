@@ -63,48 +63,58 @@
 
     <TextView
         android:id="@+id/txt_q1"
-        android:layout_width="267dp"
+        android:layout_width="220dp"
         android:layout_height="50dp"
+        android:layout_marginStart="20dp"
         android:text="Pazienti ordinati per patologia nell'ultimo mese"
         android:textColor="#0C0C0C"
         app:layout_constraintEnd_toStartOf="@+id/btn_q1"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@+id/btn_q1" />
 
     <TextView
         android:id="@+id/textView3"
-        android:layout_width="267dp"
+        android:layout_width="220dp"
         android:layout_height="50dp"
+        android:layout_marginStart="20dp"
         android:text="Elenco terapie con più terapie terminate di un certo anno"
         android:textColor="#0C0C0C"
         app:layout_constraintEnd_toStartOf="@+id/btn_q2"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@+id/btn_q2" />
 
     <TextView
         android:id="@+id/textView4"
-        android:layout_width="268dp"
-        android:layout_height="61dp"
+        android:layout_width="220dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="20dp"
         android:text="Poter vedere se in un ospedale sono programmati più di 100 esami (per non dover subito riempire il database per ora sono impostati a 2)"
         android:textColor="#0C0C0C"
         android:textSize="12sp"
         app:layout_constraintEnd_toStartOf="@+id/btn_q3"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@+id/btn_q3" />
 
     <TextView
         android:id="@+id/textView5"
-        android:layout_width="266dp"
+        android:layout_width="220dp"
         android:layout_height="50dp"
+        android:layout_marginStart="20dp"
         android:text="Lista pazienti seguiti da caregiver ed operatore sanitario"
         android:textColor="#0C0C0C"
         app:layout_constraintEnd_toStartOf="@+id/btn_q4"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@+id/btn_q4" />
 
     <TextView
         android:id="@+id/textView6"
-        android:layout_width="264dp"
-        android:layout_height="49dp"
+        android:layout_width="220dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="20dp"
         android:text="Elenco di usi di una terapia in un certo anno"
         android:textColor="#0C0C0C"
         app:layout_constraintEnd_toStartOf="@+id/btn_q5"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@+id/btn_q5" />
 
     <Button

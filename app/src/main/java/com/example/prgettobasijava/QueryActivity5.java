@@ -38,7 +38,7 @@ public class QueryActivity5 extends AppCompatActivity {
             DatabaseHelper databaseHelper = new DatabaseHelper(QueryActivity5.this);
             List<Query5> all = databaseHelper.getQuery5(txt_nome.getText().toString(), txt_anno.getText().toString());
 
-            ArrayAdapter<Query5> query5ArrayAdapter = new ArrayAdapter<>(QueryActivity5.this, android.R.layout.simple_list_item_1, all);
+            ArrayAdapter<Query5> query5ArrayAdapter = new ArrayAdapter<>(QueryActivity5.this,  R.layout.listrow, R.id.textView2, all);
             lw_q.setAdapter(query5ArrayAdapter);
         });
     }

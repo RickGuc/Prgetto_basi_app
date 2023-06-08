@@ -37,10 +37,9 @@ public class Query5 {
 
     @Override
     public String toString() {
-        return "Query5{" +
+        return
                 "Nome='" + Nome + '\'' +
                 ", Cognome='" + Cognome + '\'' +
-                ", Terapia='" + Terapia + '\'' +
-                '}';
+                ", Terapia='" + Terapia + '\'';
     }
 }

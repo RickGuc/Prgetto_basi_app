@@ -27,9 +27,8 @@ public class Query3 {
 
     @Override
     public String toString() {
-        return "Query3{" +
+        return
                 "Ospedale='" + Ospedale + '\'' +
-                ", NumEsami=" + NumEsami +
-                '}';
+                ", NumEsami=" + NumEsami;
     }
 }

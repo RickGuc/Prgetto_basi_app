@@ -33,7 +33,7 @@ public class Query1Activity extends AppCompatActivity {
             DatabaseHelper databaseHelper = new DatabaseHelper(Query1Activity.this);
             List<Query1> all = databaseHelper.getQuery1();
 
-            ArrayAdapter<Query1> query1ArrayAdapter = new ArrayAdapter<>(Query1Activity.this, android.R.layout.simple_list_item_1, all);
+            ArrayAdapter<Query1> query1ArrayAdapter = new ArrayAdapter<>(Query1Activity.this,  R.layout.listrow, R.id.textView2, all);
             lw_q.setAdapter(query1ArrayAdapter);
         });
 

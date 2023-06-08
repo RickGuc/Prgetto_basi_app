@@ -42,7 +42,7 @@ public class EsamiTerapieShowActivity extends AppCompatActivity {
             DatabaseHelper databaseHelper = new DatabaseHelper(EsamiTerapieShowActivity.this);
             List<QueryShowEsamiP> all = databaseHelper.getQueryShowEsamiP(txt_nome.getText().toString(), txt_cognome.getText().toString());
 
-            ArrayAdapter<QueryShowEsamiP> queryShowEsamiPArrayAdapter = new ArrayAdapter<>(EsamiTerapieShowActivity.this, android.R.layout.simple_list_item_1, all);
+            ArrayAdapter<QueryShowEsamiP> queryShowEsamiPArrayAdapter = new ArrayAdapter<>(EsamiTerapieShowActivity.this, R.layout.listrow, R.id.textView2, all);
             lw_q.setAdapter(queryShowEsamiPArrayAdapter);
         });
 
@@ -50,7 +50,7 @@ public class EsamiTerapieShowActivity extends AppCompatActivity {
             DatabaseHelper databaseHelper = new DatabaseHelper(EsamiTerapieShowActivity.this);
             List<QueryShowterapie> all = databaseHelper.getQueryShowterapie(txt_nome.getText().toString(), txt_cognome.getText().toString());
 
-            ArrayAdapter<QueryShowterapie> queryShowterapieArrayAdapter2 = new ArrayAdapter<>(EsamiTerapieShowActivity.this, android.R.layout.simple_list_item_1, all);
+            ArrayAdapter<QueryShowterapie> queryShowterapieArrayAdapter2 = new ArrayAdapter<>(EsamiTerapieShowActivity.this, R.layout.listrow, R.id.textView2, all);
             lw_w.setAdapter(queryShowterapieArrayAdapter2);
         });
 

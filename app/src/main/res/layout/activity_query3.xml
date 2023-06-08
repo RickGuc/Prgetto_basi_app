@@ -33,9 +33,10 @@
 
     <ListView
         android:id="@+id/lw_q3"
-        android:layout_width="409dp"
+        android:layout_width="381dp"
         android:layout_height="572dp"
-        android:background="#A68AD8"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="10dp"
         android:cacheColorHint="#131313"
         android:foregroundTint="#070707"
         android:textColor="@color/black"
