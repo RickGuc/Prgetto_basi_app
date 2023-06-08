@@ -24,8 +24,12 @@ import com.example.prgettobasijava.Modelli.Query2;
 import com.example.prgettobasijava.Modelli.Query3;
 import com.example.prgettobasijava.Modelli.Query4;
 import com.example.prgettobasijava.Modelli.Query5;
+import com.example.prgettobasijava.Modelli.QueryShowEsamiP;
+import com.example.prgettobasijava.Modelli.QueryShowPat;
+import com.example.prgettobasijava.Modelli.QueryShowterapie;
 
 import java.time.LocalDate;
+import java.time.LocalTime;
 import java.time.format.DateTimeFormatter;
 import java.util.ArrayList;
 import java.util.List;
@@ -499,6 +503,100 @@ public class DatabaseHelper extends SQLiteOpenHelper {
         cursor6.close();
         db.close();
         return returnList6;
+    }
+
+    public List<QueryShowPat> getQueryShowPat(String nome, String cognome) {
+        String[] arg = {nome, cognome};
+        List<QueryShowPat> returnList7 = new ArrayList<>();
+        String queryString6 = "SELECT p.CODICEFISCALE, t.NOME, t.DATA_RILEVAZIONE FROM TABELLA_PAZIENTE p INNER JOIN TABELLA_PATOLOGIE_CONTRATTE t ON p.CODICEFISCALE = t.PAZIENTE WHERE p.NOME = ? AND p.COGNOME = ?";
+        SQLiteDatabase db = this.getReadableDatabase();
+
+        Cursor cursor8 = db.rawQuery(queryString6, arg);
+
+        if (cursor8.moveToFirst()) {
+            do {
+                String CodFisc = cursor8.getString(0);
+                String Patologia = cursor8.getString(1);
+                LocalDate Data = LocalDate.parse(cursor8.getString(2), DateTimeFormatter.ofPattern("yyyy-MM-dd"));
+
+
+                QueryShowPat queryShowPat = new QueryShowPat(CodFisc, Patologia, Data);
+                returnList7.add(queryShowPat);
+            } while (cursor8.moveToNext());
+
+
+        }
+        else {
+
+        }
+        cursor8.close();
+        db.close();
+        return returnList7;
+    }
+
+    public List<QueryShowEsamiP> getQueryShowEsamiP(String nome, String cognome) {
+        String[] arg = {nome, cognome};
+        List<QueryShowEsamiP> returnList8 = new ArrayList<>();
+        String queryString7 = "SELECT e.PAZIENTE, e.ESAME, e.DATA, e.ORA, p.NOME, e.OPERATORE_SANITARIO, o.NOME FROM TABELLA_ESAMI e INNER JOIN TABELLA_PATOLOGIE_CONTRATTE p ON e.PATOLOGIA = p.ID INNER JOIN TABELLA_PAZIENTE z ON z.CODICEFISCALE = e.PAZIENTE INNER JOIN TABELLA_OSPEDALI o ON e.OSPEDALE = o.ID WHERE z.NOME = ? AND z.COGNOME = ?";
+        SQLiteDatabase db = this.getReadableDatabase();
+
+        Cursor cursor7 = db.rawQuery(queryString7, arg);
+
+        if (cursor7.moveToFirst()) {
+            do {
+                String Paz = cursor7.getString(0);
+                String Esame = cursor7.getString(1);
+                LocalDate Data = LocalDate.parse(cursor7.getString(2), DateTimeFormatter.ofPattern("yyyy-MM-dd"));
+                LocalTime Ora = LocalTime.parse(cursor7.getString(3), DateTimeFormatter.ofPattern("HH:mm"));
+                String Patologia = cursor7.getString(4);
+                String OpSan = cursor7.getString(5);
+                String Ospedale = cursor7.getString(6);
+
+                QueryShowEsamiP queryShowEsamiP = new QueryShowEsamiP(Paz, Esame, Data, Ora, Patologia, OpSan, Ospedale);
+                returnList8.add(queryShowEsamiP);
+            } while (cursor7.moveToNext());
+
+
+        }
+        else {
+
+        }
+        cursor7.close();
+        db.close();
+        return returnList8;
+    }
+
+    public List<QueryShowterapie> getQueryShowterapie(String nome, String cognome) {
+        String[] arg = {nome, cognome};
+        List<QueryShowterapie> returnList9 = new ArrayList<>();
+        String queryString8 = "SELECT t.PAZIENTE, t.TERAPIA, p.NOME, t.OPERATORE_SANITARIO, t.CAREGIVER, t.DATA_INIZIO, t.DATA_FINE, t.NOTE FROM TABELLA_TERAPIE t INNER JOIN TABELLA_PAZIENTE z ON t.PAZIENTE = z.CODICEFISCALE INNER JOIN TABELLA_PATOLOGIE_CONTRATTE p ON t.PATOLOGIA = p.ID WHERE z.NOME = ? AND z.COGNOME = ?";
+        SQLiteDatabase db = this.getReadableDatabase();
+
+        Cursor cursor8 = db.rawQuery(queryString8, arg);
+
+        if (cursor8.moveToFirst()) {
+            do {
+                String Paz = cursor8.getString(0);
+                String Terapia = cursor8.getString(1);
+                String Patologia = cursor8.getString(2);
+                String OpSan = cursor8.getString(3);
+                String Caregiver = cursor8.getString(4);
+                LocalDate DataInizio = LocalDate.parse(cursor8.getString(5), DateTimeFormatter.ofPattern("yyyy-MM-dd"));
+                LocalDate DataFine = LocalDate.parse(cursor8.getString(6), DateTimeFormatter.ofPattern("yyyy-MM-dd"));
+                String Note = cursor8.getString(7);
+
+                QueryShowterapie queryShowterapie = new QueryShowterapie(Paz, Terapia, Patologia, OpSan, Caregiver, DataInizio, DataFine, Note);
+                returnList9.add(queryShowterapie);
+            } while (cursor8.moveToNext());
+
+
+        }
+        else {
+
+        }
+        cursor8.close();
+        db.close();
+        return returnList9;
     }
 }
 

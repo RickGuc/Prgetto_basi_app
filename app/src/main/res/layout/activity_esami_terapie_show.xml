@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".EsamiTerapieShowActivity">
+
+    <Button
+        android:id="@+id/btn_home_esami_terapie"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="30dp"
+        android:text="Home"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/txt_nome_paz_esami_terapie"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:ems="10"
+        android:inputType="text"
+        android:text="Nome"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <EditText
+        android:id="@+id/txt_cognome_paz_esami_terapie"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:ems="10"
+        android:inputType="text"
+        android:text="Cognome"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txt_nome_paz_esami_terapie" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="142dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="120dp"
+        android:text="Paziente"
+        android:textAlignment="center"
+        android:textColor="#F30B0B"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="96dp"
+        android:layout_height="43dp"
+        android:layout_marginTop="30dp"
+        android:text="Esami"
+        android:textAlignment="center"
+        android:textColor="#EC0606"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_show_esami" />
+
+    <ListView
+        android:id="@+id/lw_esami"
+        android:layout_width="401dp"
+        android:layout_height="236dp"
+        android:layout_marginTop="25dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.523"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView8" />
+
+    <ListView
+        android:id="@+id/lw_terapie"
+        android:layout_width="403dp"
+        android:layout_height="177dp"
+        android:layout_marginTop="25dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView9" />
+
+    <Button
+        android:id="@+id/btn_show_esami"
+        android:layout_width="117dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="30dp"
+        android:text="Show Esami"
+        app:layout_constraintEnd_toStartOf="@+id/btn_show_terapie"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txt_cognome_paz_esami_terapie" />
+
+    <Button
+        android:id="@+id/btn_show_terapie"
+        android:layout_width="117dp"
+        android:layout_height="60dp"
+        android:text="Show Terapie"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/btn_show_esami"
+        app:layout_constraintTop_toTopOf="@+id/btn_show_esami" />
+
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="83dp"
+        android:layout_height="41dp"
+        android:layout_marginTop="50dp"
+        android:text="Terapie"
+        android:textAlignment="center"
+        android:textColor="#ED0606"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lw_esami" />
+</androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

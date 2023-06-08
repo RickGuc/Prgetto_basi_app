@@ -8,7 +8,7 @@ import android.widget.Button;
 
 public class MainActivity extends AppCompatActivity {
 
-    Button  next_page_queries, next_page_pat, next_page, next_page_PazientiShow, next_page_Terapie, next_page_other, next_page_add_ter, next_page_add_esame;
+    Button  next_page_queries, next_page_pat, next_page, next_page_PazientiShow, next_page_Terapie, next_page_other, next_page_add_ter, next_page_add_esame, next_page_esami_terapie;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -22,6 +22,8 @@ public class MainActivity extends AppCompatActivity {
         next_page_queries = (Button) findViewById(R.id.btn_QueryPage);
         next_page_add_ter = findViewById(R.id.btn_programma_terapia);
         next_page_add_esame = findViewById(R.id.btn_programma_esame);
+        next_page_esami_terapie = findViewById(R.id.btn_showEsamiTErapieProgrammate);
+
 
         next_page.setOnClickListener(v -> {
             Intent intent = new Intent(MainActivity.this, SecondActivity.class);
@@ -61,6 +63,11 @@ public class MainActivity extends AppCompatActivity {
 
         next_page_add_esame.setOnClickListener(v -> {
             Intent intent = new Intent(MainActivity.this, ProgrammaEsamiActivity.class);
+            startActivity(intent);
+        });
+
+        next_page_esami_terapie.setOnClickListener(v -> {
+            Intent intent = new Intent(MainActivity.this, EsamiTerapieShowActivity.class);
             startActivity(intent);
         });
 
