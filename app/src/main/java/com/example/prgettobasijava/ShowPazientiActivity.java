@@ -37,7 +37,7 @@ public class ShowPazientiActivity extends AppCompatActivity {
 
             List<ModelloPaziente> all = databaseHelper.getAll();
 
-            ArrayAdapter pazientiArrayAdapter = new ArrayAdapter<ModelloPaziente>(ShowPazientiActivity.this, android.R.layout.simple_list_item_1, all);
+            ArrayAdapter pazientiArrayAdapter = new ArrayAdapter<ModelloPaziente>(ShowPazientiActivity.this, R.layout.listrow, R.id.textView2, all);
             lv_paz.setAdapter(pazientiArrayAdapter);
             //Toast.makeText(ShowPazientiActivity.this, all.toString(), Toast.LENGTH_SHORT).show();
         });

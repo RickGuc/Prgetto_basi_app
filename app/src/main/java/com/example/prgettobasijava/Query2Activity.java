@@ -38,7 +38,7 @@ public class Query2Activity extends AppCompatActivity {
             DatabaseHelper databaseHelper = new DatabaseHelper(Query2Activity.this);
             List<Query2> all = databaseHelper.getQuery2(txt_anno.getText().toString());
 
-            ArrayAdapter<Query2> query2ArrayAdapter = new ArrayAdapter<>(Query2Activity.this, android.R.layout.simple_list_item_1, all);
+            ArrayAdapter<Query2> query2ArrayAdapter = new ArrayAdapter<>(Query2Activity.this, R.layout.listrow, R.id.textView2, all);
             lw_q.setAdapter(query2ArrayAdapter);
         });
     }

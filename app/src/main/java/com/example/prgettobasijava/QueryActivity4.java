@@ -34,7 +34,7 @@ public class QueryActivity4 extends AppCompatActivity {
             DatabaseHelper databaseHelper = new DatabaseHelper(QueryActivity4.this);
             List<Query4> all = databaseHelper.getQuery4();
 
-            ArrayAdapter<Query4> query3ArrayAdapter = new ArrayAdapter<>(QueryActivity4.this, android.R.layout.simple_list_item_1, all);
+            ArrayAdapter<Query4> query3ArrayAdapter = new ArrayAdapter<>(QueryActivity4.this, R.layout.listrow, R.id.textView2, all);
             lw_q.setAdapter(query3ArrayAdapter);
         });
     }

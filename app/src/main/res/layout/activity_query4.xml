@@ -38,7 +38,6 @@
         android:cacheColorHint="#101010"
         android:foregroundTint="#9C27B0"
         android:textColor="#0C0C0C"
-        android:background="#A68AD8"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/btn_show_q4" />

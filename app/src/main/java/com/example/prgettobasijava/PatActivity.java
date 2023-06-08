@@ -72,7 +72,7 @@ public class PatActivity extends AppCompatActivity {
             DatabaseHelper databaseHelper = new DatabaseHelper(PatActivity.this);
             List<QueryShowPat> all = databaseHelper.getQueryShowPat(txt_nome.getText().toString(), txt_cognome.getText().toString());
 
-            ArrayAdapter<QueryShowPat> queryShowPatArrayAdapter = new ArrayAdapter<>(PatActivity.this, android.R.layout.simple_list_item_1, all);
+            ArrayAdapter<QueryShowPat> queryShowPatArrayAdapter = new ArrayAdapter<>(PatActivity.this, R.layout.listrow, R.id.textView2, all);
             lw_q.setAdapter(queryShowPatArrayAdapter);
         });
     }
