@@ -7,6 +7,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import com.example.prgettobasijava.Modelli.ModelloEsame;
@@ -17,7 +18,9 @@ import java.time.LocalTime;
 import java.time.format.DateTimeFormatter;
 
 public class ProgrammaEsamiActivity extends AppCompatActivity {
-    Button btn_home, btn_add;
+    Button btn_home, btn_add, btn_check;
+
+    TextView tw_check;
     EditText txt_esame, txt_data, txt_ora, txt_paz, txt_pat, txt_ops, txt_osp;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -26,12 +29,14 @@ public class ProgrammaEsamiActivity extends AppCompatActivity {
 
     btn_add = findViewById(R.id.btn_esame_progr_add);
     btn_home = (Button) findViewById(R.id.btn_prog_esami_home);
+    btn_check = findViewById(R.id.btn_check);
+    tw_check = findViewById(R.id.tw_e);
     txt_esame = findViewById(R.id.txt_nome_esame_programmato);
     txt_data = findViewById(R.id.txt_data_esame);
     txt_ora = findViewById(R.id.txt_ora_esame);
     txt_pat = findViewById(R.id.txt_pat_esame);
     txt_ops = findViewById(R.id.txt_opS_esame);
-    txt_paz = findViewById(R.id.txt_pat_esame);
+    txt_paz = findViewById(R.id.txt_cfp_esame);
     txt_osp = findViewById(R.id.txt_osp_esame);
 
         btn_home.setOnClickListener(v -> {
@@ -62,6 +67,13 @@ public class ProgrammaEsamiActivity extends AppCompatActivity {
                 Toast.makeText(ProgrammaEsamiActivity.this, "Successo=" + success, Toast.LENGTH_SHORT).show();
 
             }
+        });
+
+        btn_check.setOnClickListener(v -> {
+            DatabaseHelper databaseHelper = new DatabaseHelper(ProgrammaEsamiActivity.this);
+            boolean y;
+            y = databaseHelper.Esenzione(txt_paz.getText().toString(), txt_esame.getText().toString());
+            tw_check.setText(String.valueOf(y));
         });
   }
 }

@@ -598,6 +598,20 @@ public class DatabaseHelper extends SQLiteOpenHelper {
         db.close();
         return returnList9;
     }
+
+public boolean Esenzione(String CodFisc, String Esame){
+    String[] arg = {CodFisc, Esame};
+    String queryString9 = "SELECT e.ESAME FROM TABELLA_ESENZIONI e INNER JOIN TABELLA_REGISTRO_ESENZIONI r ON e.ESENZIONE = r.ESENZIONE  INNER JOIN TABELLA_ESENZIONI_PAZIENTI p ON r.ESENZIONE = p.ESENZIONE WHERE p.PAZIENTE = ? AND e.ESAME = ?";
+    SQLiteDatabase db = this.getReadableDatabase();
+    Cursor cursor9 = db.rawQuery(queryString9, arg);
+        boolean check = false;
+    if (cursor9.moveToFirst()) {
+            check = (cursor9.getString(0) != null);
+    }
+        cursor9.close();
+        db.close();
+        return check;
 }
+    }
 
 

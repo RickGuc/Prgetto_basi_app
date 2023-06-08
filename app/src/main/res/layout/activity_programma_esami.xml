@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/medic2"
     tools:context=".ProgrammaEsamiActivity">
 
     <Button
@@ -20,7 +21,7 @@
         android:id="@+id/textView2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="120dp"
+        android:layout_marginTop="100dp"
         android:text="Programma esami"
         android:textColor="#F30606"
         android:textSize="20sp"
@@ -121,4 +122,22 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/txt_osp_esame" />
+
+    <Button
+        android:id="@+id/btn_check"
+        android:layout_width="176dp"
+        android:layout_height="53dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="30dp"
+        android:text="Controllo se esame esenzionato"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_esame_progr_add" />
+
+    <TextView
+        android:id="@+id/tw_e"
+        android:layout_width="131dp"
+        android:layout_height="54dp"
+        android:layout_marginStart="10dp"
+        app:layout_constraintStart_toEndOf="@+id/btn_check"
+        app:layout_constraintTop_toTopOf="@+id/btn_check" />
 </androidx.constraintlayout.widget.ConstraintLayout>
