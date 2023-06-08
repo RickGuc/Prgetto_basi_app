@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/medic2"
     tools:context=".SecondActivity">
 
     <EditText
@@ -15,6 +16,7 @@
         android:ems="10"
         android:inputType="text"
         android:text="Name"
+        android:textColor="#0C0C0C"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/text_AggiungiP" />
 
@@ -27,6 +29,7 @@
     android:ems="10"
     android:inputType="text"
     android:text="Codice Fiscale"
+    android:textColor="#0C0C0C"
     app:layout_constraintStart_toStartOf="parent"
     app:layout_constraintTop_toBottomOf="@+id/text_CodiceS" />
 
@@ -39,6 +42,7 @@
     android:ems="10"
     android:inputType="text"
     android:text="Codice Sanitario"
+    android:textColor="#0C0C0C"
     app:layout_constraintStart_toStartOf="parent"
     app:layout_constraintTop_toBottomOf="@+id/date_NascitaP" />
 
@@ -51,6 +55,7 @@
         android:ems="10"
         android:inputType="text"
         android:text="Data di nascita yyyy-mm-dd"
+        android:textColor="#0C0C0C"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/text_CognomeP" />
 
@@ -64,6 +69,7 @@
     android:text="Aggiungi Pazienti"
     android:textAlignment="center"
     android:textSize="20sp"
+    android:textColor="#0C0C0C"
     app:layout_constraintBottom_toBottomOf="parent"
     app:layout_constraintEnd_toEndOf="parent"
     app:layout_constraintHorizontal_bias="0.0"
@@ -80,6 +86,7 @@
     android:ems="10"
     android:inputType="text"
     android:text="Cognome"
+    android:textColor="#0C0C0C"
     app:layout_constraintStart_toStartOf="parent"
     app:layout_constraintTop_toBottomOf="@+id/text_NomeP" />
 
@@ -92,6 +99,7 @@
     android:ems="10"
     android:inputType="text"
     android:text="Città"
+    android:textColor="#0C0C0C"
     app:layout_constraintStart_toStartOf="parent"
     app:layout_constraintTop_toBottomOf="@+id/text_CodiceF" />
 
@@ -102,6 +110,7 @@
     android:ems="10"
     android:inputType="text"
     android:text="Via"
+    android:textColor="#0C0C0C"
     app:layout_constraintEnd_toStartOf="@+id/text_Nm"
     app:layout_constraintStart_toEndOf="@+id/text_Cta"
     app:layout_constraintTop_toTopOf="@+id/text_Cta" />
@@ -114,6 +123,7 @@
     android:ems="10"
     android:inputType="text"
     android:text="Numero"
+    android:textColor="#0C0C0C"
     app:layout_constraintEnd_toEndOf="parent"
     app:layout_constraintTop_toTopOf="@+id/text_ViaP" />
 
@@ -126,6 +136,7 @@
     android:ems="10"
     android:inputType="text"
     android:text="Genere"
+    android:textColor="#0C0C0C"
     app:layout_constraintStart_toStartOf="parent"
     app:layout_constraintTop_toBottomOf="@+id/text_CodiceF" />
 

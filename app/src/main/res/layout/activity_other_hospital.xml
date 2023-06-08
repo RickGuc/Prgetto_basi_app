@@ -5,6 +5,7 @@
     android:id="@+id/txt"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/medic2"
     tools:context=".OtherActivity_hospital">
 
     <TextView
@@ -37,6 +38,7 @@
         android:ems="10"
         android:inputType="text"
         android:text="Name"
+        android:textColor="#0C0C0C"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/tw_ospedaleAdd" />
@@ -49,6 +51,7 @@
         android:ems="10"
         android:inputType="text"
         android:text="Città"
+        android:textColor="#0C0C0C"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/txt_Nome_ospedale" />
@@ -61,6 +64,7 @@
         android:ems="10"
         android:inputType="text"
         android:text="Via"
+        android:textColor="#0C0C0C"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/txt_Città_ospedale" />
@@ -73,6 +77,7 @@
         android:ems="10"
         android:inputType="text"
         android:text="Numero"
+        android:textColor="#0C0C0C"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/txt_Via_ospedale" />
@@ -95,6 +100,7 @@
         android:ems="10"
         android:inputType="text"
         android:text="Numero di telefono"
+        android:textColor="#0C0C0C"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/txt_Numero_ospedale" />

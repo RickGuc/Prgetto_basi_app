@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/medic2"
     tools:context=".ProgrammaTerapieActivity">
 
     <EditText
@@ -14,6 +15,7 @@
         android:ems="10"
         android:inputType="text"
         android:text="data fine yyyy-mm-dd"
+        android:textColor="#0C0C0C"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/txt_data_inizio" />
@@ -26,6 +28,7 @@
         android:ems="10"
         android:inputType="text"
         android:text="Op. Sanitario"
+        android:textColor="#0C0C0C"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/txt_pat_terapia" />
@@ -60,6 +63,7 @@
         android:ems="10"
         android:inputType="text"
         android:text="Terapia"
+        android:textColor="#0C0C0C"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView7" />
@@ -72,6 +76,7 @@
         android:ems="10"
         android:inputType="text"
         android:text="Paziente"
+        android:textColor="#0C0C0C"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/txt_terapia_programmata" />
@@ -84,6 +89,7 @@
         android:ems="10"
         android:inputType="number"
         android:text="Id Patologia"
+        android:textColor="#0C0C0C"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/txt_paz_terapia" />
@@ -96,6 +102,7 @@
         android:ems="10"
         android:inputType="text"
         android:text="Caregiver"
+        android:textColor="#0C0C0C"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/txt_ops_terapia" />
@@ -108,6 +115,7 @@
         android:ems="10"
         android:inputType="text"
         android:text="Data inizio yyyy-mm-dd"
+        android:textColor="#0C0C0C"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/txt_care_terapia" />
@@ -132,6 +140,7 @@
         android:inputType="text"
         android:text="Note"
         android:textAlignment="center"
+        android:textColor="#0C0C0C"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/txt_data_fine" />
