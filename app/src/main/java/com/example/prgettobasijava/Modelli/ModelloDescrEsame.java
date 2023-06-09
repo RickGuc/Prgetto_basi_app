@@ -23,12 +23,11 @@ public class ModelloDescrEsame {
 
     @Override
     public String toString() {
-        return "ModelloDescrEsame{" +
-                "nome='" + nome + '\'' +
-                ", tipo='" + tipo + '\'' +
-                ", costo=" + costo +
-                ", specialista='" + specialista + '\'' +
-                '}';
+        return
+                "Nome='" + nome + '\'' +
+                ", Tipo='" + tipo + '\'' +
+                ", Costo=" + costo +
+                ", Specialista='" + specialista + '\'';
     }
 
     public static String getNome() {

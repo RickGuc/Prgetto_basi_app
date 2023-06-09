@@ -30,6 +30,6 @@ public class Query2 {
     public String toString() {
         return
                 "Terapia='" + Nome + '\'' +
-                ", MediaGiorniDiGuarigione=" + MediaGiorniDiGuarigione;
+                ", Media dei giorni di guarigione=" + MediaGiorniDiGuarigione;
     }
 }

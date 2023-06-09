@@ -39,7 +39,7 @@ public class Query4 {
     public String toString() {
         return
                 "Nome='" + Nome + '\'' +
-                ", OperatoreSanitario='" + OperatoreSanitario + '\'' +
+                ", Operatore sanitario='" + OperatoreSanitario + '\'' +
                 ", Caregiver='" + Caregiver + '\'';
     }
 }

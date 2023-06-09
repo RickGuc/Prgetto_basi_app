@@ -4,7 +4,7 @@ import java.time.LocalDate;
 import java.time.LocalTime;
 
 public class QueryShowEsamiP {
-    String CodSan;
+    String CodFis;
     String Esame;
     LocalDate Data;
     LocalTime Ora;
@@ -12,8 +12,8 @@ public class QueryShowEsamiP {
     String OpSan;
     String Ospedale;
 
-    public QueryShowEsamiP(String codSan, String esame, LocalDate data, LocalTime ora, String patologia, String opSan, String ospedale){
-        CodSan = codSan;
+    public QueryShowEsamiP(String codFis, String esame, LocalDate data, LocalTime ora, String patologia, String opSan, String ospedale){
+        CodFis = codFis;
         Esame = esame;
         Data = data;
         Ora = ora;
@@ -23,11 +23,11 @@ public class QueryShowEsamiP {
     }
 
     public String getCodSan() {
-        return CodSan;
+        return CodFis;
     }
 
     public void setCodSan(String codSan) {
-        CodSan = codSan;
+        CodFis = codSan;
     }
 
     public String getEsame() {
@@ -80,14 +80,13 @@ public class QueryShowEsamiP {
 
     @Override
     public String toString() {
-        return "QueryShowEsamiP{" +
-                "CodSan='" + CodSan + '\'' +
+        return
+                "Codice Fiscale paziente='" + CodFis + '\'' +
                 ", Esame='" + Esame + '\'' +
                 ", Data=" + Data +
                 ", Ora=" + Ora +
                 ", Patologia='" + Patologia + '\'' +
-                ", OpSan='" + OpSan + '\'' +
-                ", Ospedale='" + Ospedale + '\'' +
-                '}';
+                ", Operatore sanitario='" + OpSan + '\'' +
+                ", Ospedale='" + Ospedale + '\'';
     }
 }

@@ -21,12 +21,11 @@ public class ModelloSintomo {
 
     @Override
     public String toString() {
-        return "ModelloSintomo{" +
-                "id=" + id +
-                ", descrizionesintomo='" + descrizionesintomo + '\'' +
-                ", codicesanitariopaziente='" + codicesanitariopaziente + '\'' +
-                ", datarilevazione=" + datarilevazione +
-                '}';
+        return
+                "Id=" + id +
+                ", Descrizione sintomo='" + descrizionesintomo + '\'' +
+                ", Codice Sanitario paziente='" + codicesanitariopaziente + '\'' +
+                ", Data rilevazione=" + datarilevazione;
     }
 
     public static int getId() {

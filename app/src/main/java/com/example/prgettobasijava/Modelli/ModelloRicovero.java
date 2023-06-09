@@ -28,13 +28,12 @@ public class ModelloRicovero {
 
     @Override
     public String toString() {
-        return "ModelloRicoveri{" +
-                "id=" + id +
-                ", idOspedale=" + idOspedale +
-                ", codicesanitariopaziente='" + codicesanitariopaziente + '\'' +
-                ", dataricovero=" + dataricovero +
-                ", datarilascio=" + datarilascio +
-                '}';
+        return
+                "Id=" + id +
+                ", Id ospedale=" + idOspedale +
+                ", Codice Sanitario paziente='" + codicesanitariopaziente + '\'' +
+                ", Data ricovero=" + dataricovero +
+                ", Data rilascio=" + datarilascio;
     }
 
     public int getId() {

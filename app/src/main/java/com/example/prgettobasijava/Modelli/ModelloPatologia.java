@@ -26,12 +26,11 @@ public class ModelloPatologia {
 
     @Override
     public String toString() {
-        return "ModelloPatologie{" +
-                "id=" + id +
+        return
+                "Id=" + id +
                 ", patologia='" + patologia + '\'' +
-                ", codicesanitario='" + codicesanitario + '\'' +
-                ", datarilevazione=" + datarilevazione +
-                '}';
+                ", Codice Sanitario='" + codicesanitario + '\'' +
+                ", Data rilevazione=" + datarilevazione;
     }
 
     public static int getId() {

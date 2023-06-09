@@ -32,16 +32,15 @@ public class ModelloPaziente {
 
     @Override
     public String toString() {
-        return "ModelloPaziente{" +
+        return
                 "Nome='" + Nome + '\'' +
                 ", Cognome='" + Cognome + '\'' +
-                ", date=" + date +
-                ", CodiceSanitario='" + CodiceSanitario + '\'' +
-                ", CodiceFiscale='" + CodiceFiscale + '\'' +
+                ", Data di nascita=" + date +
+                ", Codice Sanitario='" + CodiceSanitario + '\'' +
+                ", Codice Fiscale='" + CodiceFiscale + '\'' +
                 ", Città='" + Città + '\'' +
                 ", Via='" + Via + '\'' +
-                ", Numero='" + Numero + '\'' +
-                '}';
+                ", Numero='" + Numero + '\'';
     }
 
     public String getNome() {

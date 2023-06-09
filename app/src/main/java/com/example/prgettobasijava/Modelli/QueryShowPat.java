@@ -41,10 +41,9 @@ public class QueryShowPat {
 
     @Override
     public String toString() {
-        return "QueryShowPat{" +
-                "CodFisc='" + CodFisc + '\'' +
+        return
+                "Codice Fiscale paziente='" + CodFisc + '\'' +
                 ", Patologia='" + Patologia + '\'' +
-                ", Data=" + Data +
-                '}';
+                ", Data=" + Data;
     }
 }

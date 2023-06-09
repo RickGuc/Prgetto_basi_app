@@ -89,15 +89,14 @@ public class QueryShowterapie {
 
     @Override
     public String toString() {
-        return "QueryShowterapie{" +
-                "CodFisc='" + CodFisc + '\'' +
+        return
+                "Codice Fiscale='" + CodFisc + '\'' +
                 ", Terapia='" + Terapia + '\'' +
                 ", Patologia='" + Patologia + '\'' +
-                ", OpSan='" + OpSan + '\'' +
+                ", Operatore sanitario='" + OpSan + '\'' +
                 ", Caregiver='" + Caregiver + '\'' +
-                ", DataInizio=" + DataInizio +
-                ", DataFine=" + DataFine +
-                ", Note='" + Note + '\'' +
-                '}';
+                ", Data inizio=" + DataInizio +
+                ", Data fine=" + DataFine +
+                ", Note='" + Note + '\'';
     }
 }

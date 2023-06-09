@@ -38,16 +38,15 @@ public class ModelloEsame {
 
     @Override
     public String toString() {
-        return "ModelloEsame{" +
-                "id=" + id +
-                ", nomeesame='" + nomeesame + '\'' +
-                ", data=" + data +
-                ", ora=" + ora +
-                ", codicesanitariopaziente='" + codicesanitariopaziente + '\'' +
-                ", idpatologia=" + idpatologia +
-                ", operatoresanitario='" + operatoresanitario + '\'' +
-                ", idospedale=" + idospedale +
-                '}';
+        return
+                "Id=" + id +
+                ", Nome Esame='" + nomeesame + '\'' +
+                ", Data=" + data +
+                ", Ora=" + ora +
+                ", Codice Sanitario paziente='" + codicesanitariopaziente + '\'' +
+                ", Id patologia=" + idpatologia +
+                ", Operatore sanitario='" + operatoresanitario + '\'' +
+                ", Id ospedale=" + idospedale;
     }
 
     public static int getId() {

@@ -29,14 +29,13 @@ public class ModelloOspedale {
 
     @Override
     public String toString() {
-        return "ModelloOspedale{" +
+        return
                // "id=" + id +//
-                ", nome='" + nome + '\'' +
-                ", città='" + città + '\'' +
-                ", via='" + via + '\'' +
-                ", numero='" + numero + '\'' +
-                ", nt=" + nt +
-                '}';
+                ", Nome='" + nome + '\'' +
+                ", Città='" + città + '\'' +
+                ", Via='" + via + '\'' +
+                ", Numero='" + numero + '\'' +
+                ", Numero di telefono=" + nt;
     }
 
     public int getId() {

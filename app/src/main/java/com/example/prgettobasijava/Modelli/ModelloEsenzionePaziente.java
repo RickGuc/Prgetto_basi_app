@@ -16,11 +16,10 @@ public class ModelloEsenzionePaziente {
 
     @Override
     public String toString() {
-        return "ModelloEsenzionePaziente{" +
-                "codice=" + codice +
-                ", codicesanitariopaziente='" + codicesanitariopaziente + '\'' +
-                ", esenzione='" + esenzione + '\'' +
-                '}';
+        return
+                "Codice=" + codice +
+                ", Codice Sanitario paziente='" + codicesanitariopaziente + '\'' +
+                ", Esenzione='" + esenzione + '\'';
     }
 
     public static int getCodice() {

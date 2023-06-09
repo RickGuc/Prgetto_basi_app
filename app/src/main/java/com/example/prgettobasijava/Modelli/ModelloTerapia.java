@@ -36,17 +36,16 @@ public class ModelloTerapia {
 
     @Override
     public String toString() {
-        return "ModelloTerapia{" +
-                "id=" + id +
-                ", nometerapia='" + nometerapia + '\'' +
-                ", codicesanitariopaziente='" + codicesanitariopaziente + '\'' +
-                ", idcontrazione=" + idcontrazione +
-                ", operatoresanitario='" + operatoresanitario + '\'' +
-                ", caregiver='" + caregiver + '\'' +
-                ", datainizio=" + datainizio +
-                ", datafine=" + datafine +
-                ", note='" + note + '\'' +
-                '}';
+        return
+                "Id=" + id +
+                ", Nome terapia='" + nometerapia + '\'' +
+                ", Codice Sanitario paziente='" + codicesanitariopaziente + '\'' +
+                ", Id contrazione=" + idcontrazione +
+                ", Operatore sanitario='" + operatoresanitario + '\'' +
+                ", Caregiver='" + caregiver + '\'' +
+                ", Data inizio=" + datainizio +
+                ", Data fine=" + datafine +
+                ", Note='" + note + '\'';
     }
 
     public int getId() {

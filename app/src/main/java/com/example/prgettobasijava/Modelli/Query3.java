@@ -29,6 +29,6 @@ public class Query3 {
     public String toString() {
         return
                 "Ospedale='" + Ospedale + '\'' +
-                ", NumEsami=" + NumEsami;
+                ", Numero degli esami=" + NumEsami;
     }
 }

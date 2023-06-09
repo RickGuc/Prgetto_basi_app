@@ -17,10 +17,9 @@ public class ModelloEsenzione {
 
     @Override
     public String toString() {
-        return "ModelloEsenzione{" +
-                "esenzione='" + esenzione + '\'' +
-                ", nomeesame='" + nomeesame + '\'' +
-                '}';
+        return
+                "Esenzione='" + esenzione + '\'' +
+                ", Nome Esame='" + nomeesame + '\'';
     }
 
     public static String getEsenzione() {

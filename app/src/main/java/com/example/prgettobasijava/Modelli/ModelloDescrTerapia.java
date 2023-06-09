@@ -21,11 +21,9 @@ public class ModelloDescrTerapia {
 
     @Override
     public String toString() {
-        return "ModelloDescrTerapia{" +
-                "nome='" + nome + '\'' +
-                ", dosaggio='" + dosaggio + '\'' +
-                ", vas=" + vas +
-                '}';
+        return
+                "Nome='" + nome + '\'' +
+                ", Dosaggio='" + dosaggio + '\'';
     }
 
     public String getNome() {
